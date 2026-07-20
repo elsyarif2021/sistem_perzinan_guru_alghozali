@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-teal: #0f766e;
+  --color-brand-teal-hover: #115e59;
+  --color-brand-teal-light: rgba(15, 118, 110, 0.1);
+  --color-brand-slate: #1e293b;
+}
+
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+@utility dark-glass-card {
+  background: rgba(30, 41, 59, 0.95);
+  border: 1px solid #334155;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+@utility sidebar-item {
+  transition: all 0.2s;
+  &:hover {
+    background-color: rgba(15, 118, 110, 0.1);
+    border-right: 4px solid #0f766e;
+  }
+}
+
+@utility active-sidebar {
+  background-color: rgba(15, 118, 110, 0.1);
+  border-right: 4px solid #0f766e;
+  color: #0f766e;
+  font-weight: 600;
+}
+
+@utility btn-primary {
+  background-color: #0f766e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: #115e59;
+  }
+}
+
+@utility status-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
